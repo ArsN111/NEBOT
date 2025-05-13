@@ -34,5 +34,5 @@ async def handle_message(message: types.Message):
     except Exception as e:
         await message.reply(f"Ошибка: {e}")
 
-if name == 'main':
+if __name__ == " в __main__":
     executor.start_polling(dp, skip_updates=True)
